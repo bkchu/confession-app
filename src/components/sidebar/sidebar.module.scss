@@ -1,0 +1,80 @@
+@import '../../sass/colors';
+@import '../../sass/mixins';
+
+@include breakpoint(phablet) {
+  .sidebar-background {
+    background-color: #f2eeec9c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 300ms;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+.sidebar {
+  $self: &;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: $white;
+  box-shadow: -3px 0 4px 0 rgba(185, 185, 185, 0.5);
+  transition: all 300ms;
+  transform: translateX(0);
+
+  &__title-container {
+    height: 8rem;
+    background-color: $green;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #{$self}__title {
+      font-family: 'Montserrat';
+      font-size: 2.625rem;
+      letter-spacing: 1px;
+      color: $black;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    overflow-y: scroll;
+    padding-top: 1rem;
+
+    #{$self}__item {
+      padding: 1rem 1.25rem;
+      text-align: right;
+      font-family: Vollkorn;
+      font-size: 2.25rem;
+      line-height: 1.17;
+      color: $black;
+      text-decoration: none;
+
+      &--page {
+        font-weight: normal;
+      }
+      &--part {
+        font-weight: bold;
+      }
+    }
+  }
+  &--hidden {
+    transform: translateX(100%);
+  }
+}

@@ -10,36 +10,44 @@ const verse = 'PARAGRAPH'; //for now, we will treat every verse as a paragraph
 export default {
   table_of_contents: [
     { type: page, content: `How To Use These Confessions Effectively` },
-    { type: section_header, content: `PART 1` },
-    { type: page, content: `Apostle Paul’s Prayer` },
-    { type: page, content: `I Am A New Creation` },
-    { type: page, content: `I Know Who I Am In Christ` },
-    { type: page, content: `I Know What I Have As A Christian` },
-    { type: page, content: `I Change Situations And Always Win` },
-    { type: page, content: `I Am The Prophet Of My Life` },
-    { type: page, content: `Christ In Me` },
-    { type: page, content: `Confession For Functioning In The Spirit` },
-    { type: section_header, content: `PART 2 - PRAYER BY THEMES` },
-    { type: page, content: `Confession For Healing` },
-    { type: page, content: `Confession For Financial Prosperity` },
-    { type: page, content: `Confession For A Victorious Family` },
-    { type: page, content: `Confession For Soul-Winning` },
-    { type: page, content: `Confession For Peace` },
-    { type: page, content: `Confession For Wisdom And Guidance` },
-    { type: page, content: `Confession For Victory In Face Of Trials` },
-    { type: page, content: `Confession For Overcoming Fear` },
-    { type: page, content: `Prayer For Beginning The Day` },
-    { type: section_header, content: `PART 3 - APPENDIX` },
-    { type: page, content: `Confessions From Foundations Of Faith` },
-    { type: page, content: `Confessions From Psalms` },
-    { type: page, content: `Romans 8` },
-    { type: page, content: `Isaiah 60` }
+    { type: section_header, content: `Part 1` },
+    { type: page, part: 1, content: `Apostle Paul’s Prayer` },
+    { type: page, part: 1, content: `I Am A New Creation` },
+    { type: page, part: 1, content: `I Know Who I Am In Christ` },
+    { type: page, part: 1, content: `I Know What I Have As A Christian` },
+    { type: page, part: 1, content: `I Change Situations And Always Win` },
+    { type: page, part: 1, content: `I Am The Prophet Of My Life` },
+    { type: page, part: 1, content: `Christ In Me` },
+    {
+      type: page,
+      part: 1,
+      content: `Confession For Functioning In The Spirit`
+    },
+    { type: section_header, content: `Part 2 - Prayer By Theme` },
+    { type: page, part: 2, content: `Confession For Healing` },
+    { type: page, part: 2, content: `Confession For Financial Prosperity` },
+    { type: page, part: 2, content: `Confession For A Victorious Family` },
+    { type: page, part: 2, content: `Confession For Soul-Winning` },
+    { type: page, part: 2, content: `Confession For Peace` },
+    { type: page, part: 2, content: `Confession For Wisdom And Guidance` },
+    {
+      type: page,
+      part: 2,
+      content: `Confession For Victory In Face Of Trials`
+    },
+    { type: page, part: 2, content: `Confession For Overcoming Fear` },
+    { type: page, part: 2, content: `Prayer For Beginning The Day` },
+    { type: section_header, content: `Part 3 - Appendix` },
+    { type: page, part: 3, content: `Confessions From Foundations Of Faith` },
+    { type: page, part: 3, content: `Confessions From Psalms` },
+    { type: page, part: 3, content: `Romans 8` },
+    { type: page, part: 3, content: `Isaiah 60` }
   ],
   parts: {
     part_1: {
       title: `Confession of New Creation`,
       pages: {
-        how_to_use_these_confession_effectively: [
+        how_to_use_these_confessions_effectively: [
           {
             type: title,
             content: `HOW TO USE THESE CONFESSIONS EFFECTIVELY`

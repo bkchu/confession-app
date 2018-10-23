@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './components/header/header';
+import Landing from './pages/landing/landing';
+import Page from './pages/page/page';
 
 class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={Header} />
+        <Route exact path="/" component={Landing} />
+        <Route path="/part/:part/page/:page" component={Page} />
       </Switch>
     );
   }

@@ -1,0 +1,23 @@
+@import '../../sass/colors';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  font-size: 2rem;
+  height: 8rem;
+  background-color: #a4b6a4;
+
+  &__brandname {
+    width: 123px;
+    height: 25px;
+
+    font-family: 'Montserrat';
+    font-size: 2.625rem;
+    letter-spacing: 3px;
+
+    color: $black;
+  }
+}

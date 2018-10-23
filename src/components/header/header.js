@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
-import './App.css';
+import { connect } from 'react-redux';
+import { openSideDrawer } from '../../redux/reducer';
+import { ReactComponent as BurgerMenu } from '../../assets/svgs/burger-menu.svg';
+import styles from './header.module.scss';
 
 class Header extends Component {
   render() {
+    const { openSideDrawer } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/DERP.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <nav className={styles.header}>
+        <h1 className={styles.header__brandname}>CONFESS</h1>
+        <BurgerMenu onClick={() => openSideDrawer()} />
+      </nav>
     );
   }
 }
 
-export default Header;
+export default connect(
+  null,
+  { openSideDrawer }
+)(Header);
