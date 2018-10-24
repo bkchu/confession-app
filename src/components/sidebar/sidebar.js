@@ -22,14 +22,24 @@ class Sidebar extends Component {
     this.sidebarDiv = React.createRef();
   }
 
-  componentDidUpdate() {
+  componentDidMount() {
     requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
       this.sidebarDiv.current.scrollTop = 0;
     });
   }
-
+  // componentDidUpdate() {
+  //   requestAnimationFrame(() => {
+  //     window.scrollTo(0, 0);
+  //     this.sidebarDiv.current.scrollTop = 0;
+  //   });
+  // }
   page = obj => (
     <NavLink
+      activeClassName={cx(
+        styles.sidebar__item,
+        styles['sidebar__item--active']
+      )}
       to={`/part/${obj.part}/page/${linkToPath(obj.content)}`}
       onClick={() => this.props.closeSideDrawer()}
       key={obj.content}
@@ -69,7 +79,6 @@ class Sidebar extends Component {
         />
         <div ref={this.sidebarDiv} className={sidebarClassName}>
           <div className={styles['sidebar__title-container']}>
-            <div className={styles.sidebar__line} />
             <h1 className={styles.sidebar__title}>Pages</h1>
             <BurgerCollapse onClick={() => closeSideDrawer()} />
           </div>

@@ -9,9 +9,15 @@ class Page extends Component {
     super();
     this.pageDiv = React.createRef();
   }
-
+  componentDidMount() {
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+      this.pageDiv.current.scrollTop = 0;
+    });
+  }
   componentDidUpdate() {
     requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
       this.pageDiv.current.scrollTop = 0;
     });
   }
