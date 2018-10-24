@@ -726,7 +726,7 @@ export default {
           },
           {
             type: verse,
-            content: `In whom are hid all the treasures of wisdom and knowledge. For in him dwelleth all the fulness of the Godhead bodily. And ye are complete in him, which is the head of all principality and power: (Colossians 2:3, 9-10)`
+            content: `In whom are hid all the treasures of wisdom and knowledge. For in him dwelleth all the fulness of the Godhead bodily. And ye are complete in him, which is the head of all principality and power: (Colossians 2:3, Colossians 2:9-10)`
           },
           {
             type: verse,
@@ -1142,7 +1142,7 @@ export default {
           },
           {
             type: verse,
-            content: `But I would have you know, that the head of every man is Christ; and the head of the woman is the man; and the head of Christ is God. … For the man is not of the woman: but the woman of the man. Neither was the man created for the woman; but the woman for the man. (1 Corinthians 11:3, 8-9)`
+            content: `But I would have you know, that the head of every man is Christ; and the head of the woman is the man; and the head of Christ is God. … For the man is not of the woman: but the woman of the man. Neither was the man created for the woman; but the woman for the man. (1 Corinthians 11:3, 1 Corinthians 11:8-9)`
           },
           {
             type: subtitle,
@@ -1178,7 +1178,7 @@ export default {
           },
           {
             type: verse,
-            content: `Husbands, love your wives, even as Christ also loved the church, and gave himself for it; … So ought men to love their wives as their own bodies. He that loveth his wife loveth himself. ... Nevertheless let every one of you in particular so love his wife even as himself; and the wife see that she reverence her husband. (Ephesians 5:25, 28, 33)`
+            content: `Husbands, love your wives, even as Christ also loved the church, and gave himself for it; … So ought men to love their wives as their own bodies. He that loveth his wife loveth himself. ... Nevertheless let every one of you in particular so love his wife even as himself; and the wife see that she reverence her husband. (Ephesians 5:25, Ephesians 5:28, Ephesians 5:33)`
           },
           {
             type: verse,
@@ -1213,7 +1213,7 @@ export default {
           },
           {
             type: verse,
-            content: `The rod and reproof give wisdom: but a child left to himself bringeth his mother to shame. Correct thy son, and he shall give thee rest; yea, he shall give delight unto thy soul. (Proverbs 29:15,17)`
+            content: `The rod and reproof give wisdom: but a child left to himself bringeth his mother to shame. Correct thy son, and he shall give thee rest; yea, he shall give delight unto thy soul. (Proverbs 29:15, Proverbs 29:17)`
           },
           {
             type: verse,
@@ -1280,7 +1280,7 @@ export default {
           {
             type: paragraph,
             content: `[Reference Scriptures]
-          Luke 19:10, 2 Timothy 2:26, Matthew 18:18, Job 22:30, Matthew 9:38, 2 Corinthians 4:4-6, Revelations 20:15, Revelations 21:27, Luke 13:1-5`
+          Luke 19:10, 2 Timothy 2:26, Matthew 18:18, Job 22:30, Matthew 9:38, 2 Corinthians 4:4-6, Revelation 20:15, Revelation 21:27, Luke 13:1-5`
           }
         ],
         confession_for_peace: [
@@ -2097,7 +2097,7 @@ export default {
           Nay, in all these things we are more than conquerors through him that loved us.
           For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,
           Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.
-          Romans 8:1-39`
+          (Romans 8:1-25)`
           }
         ],
         isaiah_60: [
@@ -2128,7 +2128,8 @@ export default {
           The sun shall be no more thy light by day; neither for brightness shall the moon give light unto thee: but the Lord shall be unto thee an everlasting light, and thy God thy glory.
           Thy sun shall no more go down; neither shall thy moon withdraw itself: for the Lord shall be thine everlasting light, and the days of thy mourning shall be ended.
           Thy people also shall be all righteous: they shall inherit the land for ever, the branch of my planting, the work of my hands, that I may be glorified.
-          A little one shall become a thousand, and a small one a strong nation: I the Lord will hasten it in his time.`
+          A little one shall become a thousand, and a small one a strong nation: I the Lord will hasten it in his time.
+          (Isaiah 60:1-22)`
           }
         ]
       }

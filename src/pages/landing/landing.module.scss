@@ -2,7 +2,7 @@
 
 .landing {
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 5.625rem);
 
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
     color: $black;
   }
   &__quote {
-    padding: 0 29px;
+    padding: 0 3.625rem;
     text-align: center;
     font-family: 'Vollkorn';
     text-transform: uppercase;

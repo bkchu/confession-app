@@ -2,7 +2,7 @@
 
 .page {
   $self: &;
-  padding: 10px 10px 0;
+  padding: 1.25rem 1.25rem 4rem;
   background-color: $white;
   &__title {
     font-family: Vollkorn;
@@ -10,7 +10,7 @@
     font-weight: bold;
     line-height: 1.13;
     color: $black;
-    margin-top: 10px;
+    margin-top: 1.25rem;
   }
 
   &__paragraph {
@@ -18,7 +18,7 @@
     font-size: 2rem;
     line-height: 1.5;
     color: $black;
-    margin-top: 10px;
+    margin-top: 1.25rem;
     a.bible-verse {
       text-decoration: none;
     }
@@ -29,7 +29,7 @@
     font-size: 2rem;
     line-height: 1.5;
     color: $black;
-    margin-top: 10px;
+    margin-top: 1.25rem;
   }
 
   &__subtitle {
@@ -39,7 +39,7 @@
     letter-spacing: 1px;
     color: $black;
     text-transform: capitalize;
-    margin-top: 10px;
+    margin-top: 1.25rem;
   }
 
   &__subtitle--2 {
@@ -48,6 +48,6 @@
     color: $black;
     text-transform: capitalize;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 1.25rem;
   }
 }

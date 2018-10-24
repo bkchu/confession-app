@@ -6,10 +6,12 @@ import Page from './pages/page/page';
 class Routes extends Component {
   render() {
     return (
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route path="/part/:part/page/:page" component={Page} />
-      </Switch>
+      <div style={{ paddingTop: '5.625rem' }}>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route path="/part/:part/page/:page" component={Page} />
+        </Switch>
+      </div>
     );
   }
 }

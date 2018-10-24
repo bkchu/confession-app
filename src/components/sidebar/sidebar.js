@@ -69,7 +69,8 @@ class Sidebar extends Component {
         />
         <div ref={this.sidebarDiv} className={sidebarClassName}>
           <div className={styles['sidebar__title-container']}>
-            <h1 className={styles.sidebar__title}>Table of Contents</h1>
+            <div className={styles.sidebar__line} />
+            <h1 className={styles.sidebar__title}>Pages</h1>
             <BurgerCollapse onClick={() => closeSideDrawer()} />
           </div>
           <div className={styles.sidebar__container}>{contents}</div>
