@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import confession from '../../services/confession';
 import { BibleVerseFromText } from '../../services/verse-parser';
 
@@ -80,14 +82,21 @@ class Page extends Component {
     };
 
     const { page, part } = this.props.match.params;
+    const { isOpen } = this.props;
 
     return (
       <div ref={this.pageDiv} className={styles.page}>
         {displayPage(confession.getPage(part, page))}
-        <Footer />
+        {!isOpen && <Footer />}
       </div>
     );
   }
 }
 
-export default Page;
+const mapStateToProps = state => {
+  return {
+    isOpen: state.showSideDrawer
+  };
+};
+
+export default connect(mapStateToProps)(Page);
