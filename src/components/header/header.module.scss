@@ -8,7 +8,14 @@
 
   font-size: 2rem;
   height: 8rem;
-  background-color: #a4b6a4;
+
+  &--primary {
+    background-color: $green;
+  }
+
+  &--secondary {
+    background-color: $peach;
+  }
 
   &__brandname {
     width: 123px;

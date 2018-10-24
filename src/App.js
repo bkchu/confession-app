@@ -4,8 +4,6 @@ import Header from './components/header/header';
 import Sidebar from './components/sidebar/sidebar';
 import './app.scss';
 
-// import BibleVerseFromText from './services/verse-parser';
-
 class App extends Component {
   render() {
     return (

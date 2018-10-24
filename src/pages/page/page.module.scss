@@ -1,0 +1,44 @@
+@import '../../sass/colors';
+
+.page {
+  $self: &;
+  padding: 10px 10px 0;
+  background-color: $white;
+  &__title {
+    font-family: Vollkorn;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.13;
+    color: $black;
+    margin-top: 10px;
+  }
+
+  &__paragraph {
+    font-family: Vollkorn;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $black;
+    margin-top: 10px;
+    a.bible-verse {
+      text-decoration: none;
+    }
+  }
+
+  &__verse {
+    font-family: Vollkorn;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $black;
+    margin-top: 10px;
+  }
+
+  &__subtitle {
+    font-family: Vollkorn;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $black;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+}

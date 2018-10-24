@@ -1,12 +1,11 @@
 import ReactHtmlParser from 'react-html-parser';
 import books from './bible-abbreviations';
 
-const BibleVerseFromText = props => {
-  const contents = props.children.slice();
+export const BibleVerseFromText = str => {
+  const contents = str.slice();
 
   const regex = /(?:(\d)\s{1})?(\w+)\s{1}(\d+):(\d+)(?:-?(\d+))?/gi;
   const replacer = (match, p1, p2, p3, p4, p5, str) => {
-    console.log(match);
     // match - the full match '1 John 3:16'
     // p1 - book edition ex. '1 John 3:16' => '1'
     // p2 - book ex. 'John'
@@ -27,7 +26,7 @@ const BibleVerseFromText = props => {
         endingVerse = p5 ? `-${p5}` : '',
         // template verse - https://www.bible.com/bible/1/2CO.13.4-5.KJV
         link = `https://www.bible.com/bible/1/${book}.${chapter}.${startingVerse}${endingVerse}.KJV`,
-        aTag = `<a class="bible-verse" href="${link}" target="_blank" rel="noopener noreferrer">${match}</a>`;
+        aTag = `<a style="text-decoration: none; color: #777777;" href="${link}" target="_blank" rel="noopener noreferrer">${match}</a>`;
       return aTag;
     } else {
       // else, just return the text as is
@@ -38,5 +37,3 @@ const BibleVerseFromText = props => {
   const inReact = ReactHtmlParser(contents.replace(regex, replacer));
   return inReact;
 };
-
-export default BibleVerseFromText;

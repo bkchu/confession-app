@@ -8,8 +8,15 @@ const verse = 'PARAGRAPH'; //for now, we will treat every verse as a paragraph
 // const verse = 'VERSE'; //delete the line above and uncomment this line for when markdown verses are used
 
 export default {
+  getPage(part, page) {
+    return this.parts[`part_${part}`].pages[page.replace(/-/g, '_')];
+  },
   table_of_contents: [
-    { type: page, content: `How To Use These Confessions Effectively` },
+    {
+      type: page,
+      part: 0,
+      content: `How To Use These Confessions Effectively`
+    },
     { type: section_header, content: `Part 1` },
     { type: page, part: 1, content: `Apostle Paul’s Prayer` },
     { type: page, part: 1, content: `I Am A New Creation` },
@@ -41,16 +48,15 @@ export default {
     { type: page, part: 3, content: `Confessions From Foundations Of Faith` },
     { type: page, part: 3, content: `Confessions From Psalms` },
     { type: page, part: 3, content: `Romans 8` },
-    { type: page, part: 3, content: `Isaiah 60` }
+    { type: page, part: 3, content: `Isaiah 60` }
   ],
   parts: {
-    part_1: {
-      title: `Confession of New Creation`,
+    part_0: {
       pages: {
         how_to_use_these_confessions_effectively: [
           {
             type: title,
-            content: `HOW TO USE THESE CONFESSIONS EFFECTIVELY`
+            content: `How to Use These Confessions Effectively`
           },
           {
             type: paragraph,
@@ -131,9 +137,14 @@ export default {
           },
           { type: paragraph, content: `June 1st, 2011` },
           { type: paragraph, content: `Soonae Choi` }
-        ],
+        ]
+      }
+    },
+    part_1: {
+      title: `Confession of New Creation`,
+      pages: {
         apostle_pauls_prayer: [
-          { type: title, content: 'APOSTLE PAUL’S PRAYER' },
+          { type: title, content: `Apostle Paul's Prayer` },
           { type: subtitle, content: 'The Prayer for Revelation' },
           {
             type: paragraph,
@@ -160,7 +171,7 @@ export default {
           }
         ],
         i_am_a_new_creation: [
-          { type: title, content: 'I AM A NEW CREATION!' },
+          { type: title, content: 'I am a New Creation!' },
           {
             type: verse,
             content: `“Therefore if any man be in Christ, he is a new creature: old things are passed away; behold all things are become new.” (2 Corinthians 5:17)`
@@ -206,7 +217,7 @@ export default {
         i_know_who_i_am_in_christ: [
           {
             type: title,
-            content: 'I KNOW WHO I AM IN CHRIST'
+            content: `I Know Who I am in Christ`
           },
           {
             type: verse,
@@ -441,7 +452,7 @@ export default {
         i_know_what_i_have_as_a_christian: [
           {
             type: title,
-            content: `I KNOW WHAT I HAVE AS A CHRISTIAN`
+            content: `I Know What I Have as a Christian`
           },
           {
             type: subtitle,
@@ -738,7 +749,7 @@ export default {
         i_change_situations_and_always_win: [
           {
             type: title,
-            content: `I CHANGE SITUATIONS AND ALWAYS WIN`
+            content: `I Change Situations and Always Win`
           },
           {
             type: verse,
@@ -819,7 +830,7 @@ export default {
         i_am_the_prophet_of_my_life: [
           {
             type: title,
-            content: `I AM THE PROPHET OF MY LIFE.`
+            content: `I Am The Prophet of my Life`
           },
           {
             type: paragraph,
@@ -861,7 +872,7 @@ export default {
         christ_in_me: [
           {
             type: title,
-            content: `CHRIST IN ME`
+            content: `Christ in Me`
           },
           {
             type: verse,
@@ -911,7 +922,7 @@ export default {
         confession_for_functioning_in_the_spirit: [
           {
             type: title,
-            content: `CONFESSION FOR FUNCTIONING IN THE SPIRIT`
+            content: `Confession for Functioning in the Spirit`
           },
           {
             type: subtitle,
@@ -1006,7 +1017,7 @@ export default {
         confession_for_healing: [
           {
             type: title,
-            content: `CONFESSION FOR HEALING`
+            content: `Confession for Healing`
           },
           {
             type: verse,
@@ -1049,7 +1060,7 @@ export default {
         confession_for_financial_prosperity: [
           {
             type: title,
-            content: `CONFESSION FOR FINANCIAL PROSPERITY`
+            content: `Confession for Financial Prosperity`
           },
           {
             type: verse,
@@ -1123,7 +1134,7 @@ export default {
         confession_for_a_victorious_family: [
           {
             type: title,
-            content: `CONFESSION FOR A VICTORIOUS FAMILY`
+            content: `Confession for a Victorious Family`
           },
           {
             type: verse,
@@ -1224,7 +1235,7 @@ export default {
         confession_for_soul_winning: [
           {
             type: title,
-            content: `CONFESSION FOR SOUL-WINNING`
+            content: `Confession for Soul-Winning`
           },
           {
             type: verse,
@@ -1275,7 +1286,7 @@ export default {
         confession_for_peace: [
           {
             type: title,
-            content: `CONFESSION FOR PEACE`
+            content: `Confession for Peace`
           },
           {
             type: verse,
@@ -1308,7 +1319,7 @@ export default {
         confession_for_wisdom_and_guidance: [
           {
             type: title,
-            content: `CONFESSION FOR WISDOM AND GUIDANCE`
+            content: `Confession for Wisdom and Guidance`
           },
           {
             type: verse,
@@ -1370,7 +1381,7 @@ export default {
         confession_for_victory_in_face_of_trials: [
           {
             type: title,
-            content: `CONFESSION FOR VICTORY IN FACE OF TRIALS`
+            content: `Confession for Victory in Face of Trials`
           },
           {
             type: verse,
@@ -1432,7 +1443,7 @@ export default {
         confession_for_overcoming_fear: [
           {
             type: title,
-            content: `CONFESSION FOR OVERCOMING FEAR`
+            content: `Confession for Overcoming Fear`
           },
           {
             type: verse,
@@ -1534,7 +1545,7 @@ export default {
         prayer_for_beginning_the_day: [
           {
             type: title,
-            content: `PRAYER FOR BEGINNING THE DAY`
+            content: `Prayer for Beginning the Day`
           },
           {
             type: paragraph,
@@ -1655,7 +1666,7 @@ export default {
         confessions_from_foundations_of_faith: [
           {
             type: title,
-            content: `CONFESSIONS FROM FOUNDATIONS OF FAITH`
+            content: `Confessions from Foundations of Faith`
           },
           {
             type: subtitle,
@@ -1944,7 +1955,7 @@ export default {
         confessions_from_psalms: [
           {
             type: title,
-            content: `CONFESSIONS FROM PSALMS`
+            content: `Confessions from Psalms`
           },
           {
             type: subtitle,

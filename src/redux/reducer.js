@@ -1,7 +1,7 @@
 import { OPEN_SIDE_DRAWER, CLOSE_SIDE_DRAWER } from './actions';
 
 const initialState = {
-  showSideDrawer: true
+  showSideDrawer: false
 };
 export default function reducer(state = initialState, action) {
   switch (action.type) {

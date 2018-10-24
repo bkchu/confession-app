@@ -12,7 +12,7 @@ import { ReactComponent as BurgerCollapse } from '../../assets/svgs/burger-menu-
 const linkToPath = str => {
   return str
     .toLowerCase()
-    .replace('’', '')
+    .replace(/’/g, '')
     .replace(/\s/g, '-');
 };
 
@@ -67,11 +67,13 @@ class Sidebar extends Component {
     );
   }
 }
+
 const mapStateToProps = state => {
   return {
     isOpen: state.showSideDrawer
   };
 };
+
 export default connect(
   mapStateToProps,
   { closeSideDrawer }
