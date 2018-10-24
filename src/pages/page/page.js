@@ -5,6 +5,17 @@ import { BibleVerseFromText } from '../../services/verse-parser';
 import styles from './page.module.scss';
 
 class Page extends Component {
+  constructor() {
+    super();
+    this.pageDiv = React.createRef();
+  }
+
+  componentDidUpdate() {
+    requestAnimationFrame(() => {
+      this.pageDiv.current.scrollTop = 0;
+    });
+  }
+
   title = (str, key) => (
     <h1 key={key} className={styles.page__title}>
       {str}
@@ -26,6 +37,12 @@ class Page extends Component {
     </h2>
   );
 
+  subtitle2 = (str, key) => (
+    <h3 key={key} className={styles['page__subtitle--2']}>
+      {str}
+    </h3>
+  );
+
   render() {
     const displayPage = page =>
       page.map(({ type, content }, index) => {
@@ -43,6 +60,9 @@ class Page extends Component {
           case 'SUBTITLE':
             return this.subtitle(content, key);
 
+          case 'SUBTITLE_2':
+            return this.subtitle2(content, key);
+
           default:
             return content;
         }
@@ -50,7 +70,7 @@ class Page extends Component {
     const { page, part } = this.props.match.params;
 
     return (
-      <div className={styles.page}>
+      <div ref={this.pageDiv} className={styles.page}>
         {displayPage(confession.getPage(part, page))}
       </div>
     );

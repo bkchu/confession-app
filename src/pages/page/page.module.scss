@@ -41,4 +41,13 @@
     text-transform: capitalize;
     margin-top: 10px;
   }
+
+  &__subtitle--2 {
+    font-family: Vollkorn;
+    font-size: 1.875rem;
+    color: $black;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-top: 10px;
+  }
 }

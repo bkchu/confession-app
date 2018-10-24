@@ -17,6 +17,17 @@ const linkToPath = str => {
 };
 
 class Sidebar extends Component {
+  constructor() {
+    super();
+    this.sidebarDiv = React.createRef();
+  }
+
+  componentDidUpdate() {
+    requestAnimationFrame(() => {
+      this.sidebarDiv.current.scrollTop = 0;
+    });
+  }
+
   page = obj => (
     <NavLink
       to={`/part/${obj.part}/page/${linkToPath(obj.content)}`}
@@ -56,12 +67,13 @@ class Sidebar extends Component {
           onClick={() => closeSideDrawer()}
           className={sidebarBackgroundClassName}
         />
-        <div className={sidebarClassName}>
+        <div ref={this.sidebarDiv} className={sidebarClassName}>
           <div className={styles['sidebar__title-container']}>
             <h1 className={styles.sidebar__title}>Table of Contents</h1>
             <BurgerCollapse onClick={() => closeSideDrawer()} />
           </div>
           <div className={styles.sidebar__container}>{contents}</div>
+          <div className={styles['sidebar__footer']}>©2018 Brandon Chung</div>
         </div>
       </Fragment>
     );

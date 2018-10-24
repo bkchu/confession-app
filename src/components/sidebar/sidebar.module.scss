@@ -1,28 +1,28 @@
 @import '../../sass/colors';
 @import '../../sass/mixins';
 
-@include breakpoint(phablet) {
-  .sidebar-background {
-    background-color: #f2eeec9c;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+// @include breakpoint(phablet) {
+.sidebar-background {
+  background-color: #f2eeec9c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
-    &--hidden {
-      display: none;
-    }
+  &--hidden {
+    display: none;
   }
 }
+// }
 
 .sidebar {
   $self: &;
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
   overflow: scroll;
   background-color: $white;
@@ -76,5 +76,13 @@
   }
   &--hidden {
     transform: translateX(100%);
+  }
+  &__footer {
+    height: 8rem;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
   }
 }

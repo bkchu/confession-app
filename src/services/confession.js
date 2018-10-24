@@ -2096,7 +2096,8 @@ export default {
           As it is written, For thy sake we are killed all the day long; we are accounted as sheep for the slaughter.
           Nay, in all these things we are more than conquerors through him that loved us.
           For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,
-          Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.`
+          Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.
+          Romans 8:1-39`
           }
         ],
         isaiah_60: [

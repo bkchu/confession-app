@@ -16,10 +16,15 @@ export default function reducer(state = initialState, action) {
   }
 }
 
-export const openSideDrawer = () => ({
-  type: OPEN_SIDE_DRAWER
-});
-
-export const closeSideDrawer = () => ({
-  type: CLOSE_SIDE_DRAWER
-});
+export const openSideDrawer = () => {
+  document.body.style.overflow = 'hidden';
+  return {
+    type: OPEN_SIDE_DRAWER
+  };
+};
+export const closeSideDrawer = () => {
+  document.body.style.overflow = 'auto';
+  return {
+    type: CLOSE_SIDE_DRAWER
+  };
+};
