@@ -12,7 +12,7 @@ const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router basename="/confession-app">
       <App />
     </Router>
   </Provider>,
