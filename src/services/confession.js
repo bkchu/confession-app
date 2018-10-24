@@ -11,44 +11,151 @@ export default {
   getPage(part, page) {
     return this.parts[`part_${part}`].pages[page.replace(/-/g, '_')];
   },
+  get totalNumberOfPages() {
+    return this.table_of_contents.filter(content => content.type === page)
+      .length;
+  },
+  get tableOfContents() {
+    return this.table_of_contents;
+  },
   table_of_contents: [
     {
       type: page,
+      page: 1,
       part: 0,
       content: `How To Use These Confessions Effectively`
     },
     { type: section_header, content: `Part 1` },
-    { type: page, part: 1, content: `Apostle Paul’s Prayer` },
-    { type: page, part: 1, content: `I Am A New Creation` },
-    { type: page, part: 1, content: `I Know Who I Am In Christ` },
-    { type: page, part: 1, content: `I Know What I Have As A Christian` },
-    { type: page, part: 1, content: `I Change Situations And Always Win` },
-    { type: page, part: 1, content: `I Am The Prophet Of My Life` },
-    { type: page, part: 1, content: `Christ In Me` },
     {
       type: page,
+      page: 2,
+      part: 1,
+      content: `Apostle Paul’s Prayer`
+    },
+    {
+      type: page,
+      page: 3,
+      part: 1,
+      content: `I Am A New Creation`
+    },
+    {
+      type: page,
+      page: 4,
+      part: 1,
+      content: `I Know Who I Am In Christ`
+    },
+    {
+      type: page,
+      page: 5,
+      part: 1,
+      content: `I Know What I Have As A Christian`
+    },
+    {
+      type: page,
+      page: 6,
+      part: 1,
+      content: `I Change Situations And Always Win`
+    },
+    {
+      type: page,
+      page: 7,
+      part: 1,
+      content: `I Am The Prophet Of My Life`
+    },
+    {
+      type: page,
+      page: 8,
+      part: 1,
+      content: `Christ In Me`
+    },
+    {
+      type: page,
+
+      page: 9,
       part: 1,
       content: `Confession For Functioning In The Spirit`
     },
     { type: section_header, content: `Part 2 - Prayer By Theme` },
-    { type: page, part: 2, content: `Confession For Healing` },
-    { type: page, part: 2, content: `Confession For Financial Prosperity` },
-    { type: page, part: 2, content: `Confession For A Victorious Family` },
-    { type: page, part: 2, content: `Confession For Soul-Winning` },
-    { type: page, part: 2, content: `Confession For Peace` },
-    { type: page, part: 2, content: `Confession For Wisdom And Guidance` },
     {
       type: page,
+      page: 10,
+      part: 2,
+      content: `Confession For Healing`
+    },
+    {
+      type: page,
+      page: 11,
+      part: 2,
+      content: `Confession For Financial Prosperity`
+    },
+    {
+      type: page,
+      page: 12,
+      part: 2,
+      content: `Confession For A Victorious Family`
+    },
+    {
+      type: page,
+      page: 13,
+      part: 2,
+      content: `Confession For Soul-Winning`
+    },
+    {
+      type: page,
+      page: 14,
+      part: 2,
+      content: `Confession For Peace`
+    },
+    {
+      type: page,
+      page: 15,
+      part: 2,
+      content: `Confession For Wisdom And Guidance`
+    },
+    {
+      type: page,
+
+      page: 16,
       part: 2,
       content: `Confession For Victory In Face Of Trials`
     },
-    { type: page, part: 2, content: `Confession For Overcoming Fear` },
-    { type: page, part: 2, content: `Prayer For Beginning The Day` },
+    {
+      type: page,
+      page: 17,
+      part: 2,
+      content: `Confession For Overcoming Fear`
+    },
+    {
+      type: page,
+      page: 18,
+      part: 2,
+      content: `Prayer For Beginning The Day`
+    },
     { type: section_header, content: `Part 3 - Appendix` },
-    { type: page, part: 3, content: `Confessions From Foundations Of Faith` },
-    { type: page, part: 3, content: `Confessions From Psalms` },
-    { type: page, part: 3, content: `Romans 8` },
-    { type: page, part: 3, content: `Isaiah 60` }
+    {
+      type: page,
+      page: 19,
+      part: 3,
+      content: `Confessions From Foundations Of Faith`
+    },
+    {
+      type: page,
+      page: 20,
+      part: 3,
+      content: `Confessions From Psalms`
+    },
+    {
+      type: page,
+      page: 21,
+      part: 3,
+      content: `Romans 8`
+    },
+    {
+      type: page,
+      page: 22,
+      part: 3,
+      content: `Isaiah 60`
+    }
   ],
   parts: {
     part_0: {

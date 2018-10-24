@@ -8,13 +8,7 @@ import { closeSideDrawer } from '../../redux/reducer';
 import styles from './sidebar.module.scss';
 import confession from '../../services/confession';
 import { ReactComponent as BurgerCollapse } from '../../assets/svgs/burger-menu-collapse.svg';
-
-const linkToPath = str => {
-  return str
-    .toLowerCase()
-    .replace(/’/g, '')
-    .replace(/\s/g, '-');
-};
+import { getPathFromTitle } from '../../services/pathConversion';
 
 class Sidebar extends Component {
   constructor() {
@@ -40,7 +34,7 @@ class Sidebar extends Component {
         styles.sidebar__item,
         styles['sidebar__item--active']
       )}
-      to={`/part/${obj.part}/page/${linkToPath(obj.content)}`}
+      to={`/part/${obj.part}/page/${getPathFromTitle(obj.content)}`}
       onClick={() => this.props.closeSideDrawer()}
       key={obj.content}
       className={cx(styles.sidebar__item, styles['sidebar__item--page'])}

@@ -3,6 +3,8 @@ import confession from '../../services/confession';
 import { BibleVerseFromText } from '../../services/verse-parser';
 
 import styles from './page.module.scss';
+import Footer from '../../components/footer/footer';
+import Error from '../error/error';
 
 class Page extends Component {
   constructor() {
@@ -12,33 +14,31 @@ class Page extends Component {
   componentDidMount() {
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
-      this.pageDiv.current.scrollTop = 0;
     });
   }
   componentDidUpdate() {
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
-      this.pageDiv.current.scrollTop = 0;
     });
   }
 
   title = (str, key) => (
-    <h1 key={key} className={styles.page__title}>
+    <h1 key={key} className={styles['page__title']}>
       {str}
     </h1>
   );
   paragraph = (str, key) => (
-    <p key={key} className={styles.page__paragraph}>
+    <p key={key} className={styles['page__paragraph']}>
       {str}
     </p>
   );
   verse = (str, key) => (
-    <p key={key} className={styles.page__verse}>
+    <p key={key} className={styles['page__verse']}>
       {str}
     </p>
   );
   subtitle = (str, key) => (
-    <h2 key={key} className={styles.page__subtitle}>
+    <h2 key={key} className={styles['page__subtitle']}>
       {str}
     </h2>
   );
@@ -50,34 +50,41 @@ class Page extends Component {
   );
 
   render() {
-    const displayPage = page =>
-      page.map(({ type, content }, index) => {
-        const key = type + content + index;
-        switch (type) {
-          case 'TITLE':
-            return this.title(content, key);
+    const displayPage = page => {
+      return page ? (
+        page.map(({ type, content }, index) => {
+          const key = type + content + index;
+          switch (type) {
+            case 'TITLE':
+              return this.title(content, key);
 
-          case 'PARAGRAPH':
-            return this.paragraph(BibleVerseFromText(content), key);
+            case 'PARAGRAPH':
+              return this.paragraph(BibleVerseFromText(content), key);
 
-          case 'VERSE':
-            return this.verse(BibleVerseFromText(content), key);
+            case 'VERSE':
+              return this.verse(BibleVerseFromText(content), key);
 
-          case 'SUBTITLE':
-            return this.subtitle(content, key);
+            case 'SUBTITLE':
+              return this.subtitle(content, key);
 
-          case 'SUBTITLE_2':
-            return this.subtitle2(content, key);
+            case 'SUBTITLE_2':
+              return this.subtitle2(content, key);
 
-          default:
-            return content;
-        }
-      });
+            default:
+              return content;
+          }
+        })
+      ) : (
+        <Error />
+      );
+    };
+
     const { page, part } = this.props.match.params;
 
     return (
       <div ref={this.pageDiv} className={styles.page}>
         {displayPage(confession.getPage(part, page))}
+        <Footer />
       </div>
     );
   }
