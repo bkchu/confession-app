@@ -6,7 +6,7 @@ const Error = props => {
     <div className={styles['error']}>
       <div className={styles['error__container']}>
         <p>This page doesn't exist.</p>
-        <button onClick={() => props.history.push('/')}>Go back.</button>
+        <button onClick={() => props.history.push('/')}>Go Back</button>
       </div>
     </div>
   );

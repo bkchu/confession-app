@@ -14,6 +14,7 @@ class Page extends Component {
     this.pageDiv = React.createRef();
   }
   componentDidMount() {
+    window.addEventListener('scroll', this.onScroll);
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
@@ -22,6 +23,10 @@ class Page extends Component {
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
   }
 
   title = (str, key) => (
@@ -50,6 +55,10 @@ class Page extends Component {
       {str}
     </h3>
   );
+
+  onScroll(e) {
+    console.log(e);
+  }
 
   render() {
     const displayPage = page => {
