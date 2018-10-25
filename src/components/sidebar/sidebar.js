@@ -74,7 +74,10 @@ class Sidebar extends Component {
         <div ref={this.sidebarDiv} className={sidebarClassName}>
           <div className={styles['sidebar__title-container']}>
             <h1 className={styles.sidebar__title}>Pages</h1>
-            <BurgerCollapse onClick={() => closeSideDrawer()} />
+            <BurgerCollapse
+              style={{ cursor: 'pointer' }}
+              onClick={() => closeSideDrawer()}
+            />
           </div>
           <div className={styles.sidebar__container}>{contents}</div>
           <div className={styles['sidebar__footer']}>©2018 Brandon Chung</div>

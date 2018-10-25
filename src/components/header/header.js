@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
+
 import { openSideDrawer } from '../../redux/reducer';
 import { ReactComponent as BurgerMenu } from '../../assets/svgs/burger-menu.svg';
+
 import styles from './header.module.scss';
 
 class Header extends Component {
@@ -24,12 +26,14 @@ class Header extends Component {
         >
           CONFESS
         </h1>
-        <BurgerMenu onClick={() => openSideDrawer()} />
+        <BurgerMenu
+          style={{ cursor: 'pointer' }}
+          onClick={() => openSideDrawer()}
+        />
       </nav>
     );
   }
 }
-
 export default withRouter(
   connect(
     null,

@@ -7,7 +7,7 @@ import Error from './pages/error/error';
 class Routes extends Component {
   render() {
     return (
-      <div style={{ paddingTop: '5.625rem' }}>
+      <div style={{ paddingTop: '5.625rem', backgroundColor: 'white' }}>
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/part/:part/page/:page" component={Page} />

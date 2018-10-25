@@ -74,6 +74,7 @@
       }
       &--part {
         font-weight: bold;
+        user-select: none;
       }
       &--active {
         background-color: $peach;
