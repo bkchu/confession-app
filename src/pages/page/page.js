@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { setScrollStatus } from '../../redux/reducer';
 
 import confession from '../../services/confession';
 import { BibleVerseFromText } from '../../services/verse-parser';
@@ -14,6 +15,7 @@ class Page extends Component {
     this.pageDiv = React.createRef();
   }
   componentDidMount() {
+    window.addEventListener('scroll', this.onScroll, { passive: true });
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
@@ -22,6 +24,9 @@ class Page extends Component {
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
   }
 
   title = (str, key) => (
@@ -50,6 +55,10 @@ class Page extends Component {
       {str}
     </h3>
   );
+
+  onScroll = e => {
+    this.props.setScrollStatus(true);
+  };
 
   render() {
     const displayPage = page => {
@@ -99,4 +108,7 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Page);
+export default connect(
+  mapStateToProps,
+  { setScrollStatus }
+)(Page);

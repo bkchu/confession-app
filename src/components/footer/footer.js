@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import cx from 'classnames';
 
 import confession from '../../services/confession';
 import styles from './footer.module.scss';
 import { getPathFromTitle } from '../../services/pathConversion';
 
 class Footer extends Component {
+  state = {
+    lastScrollTop: 0
+  };
+
   getCurrentPageNum() {
     const { page } = this.props.match.params;
     const currentPageNum = confession.tableOfContents.find(
@@ -57,8 +63,12 @@ class Footer extends Component {
   }
 
   render() {
+    const footerClassNames = cx(styles['footer'], {
+      [styles['footer--hidden']]: this.props.isScrollingDown
+    });
+
     return (
-      <div className={styles['footer']}>
+      <div className={footerClassNames}>
         <button
           onClick={() => this.routeToNewPage('previous')}
           className={styles['footer__button']}
@@ -75,4 +85,12 @@ class Footer extends Component {
     );
   }
 }
-export default withRouter(Footer);
+
+const mapStateToProps = state => {
+  return {
+    didScroll: state.didScroll,
+    isScrollingDown: state.isScrollingDown
+  };
+};
+
+export default withRouter(connect(mapStateToProps)(Footer));

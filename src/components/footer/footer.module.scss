@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &__button {
     box-shadow: 0px 3px 4px 1px rgba(128, 128, 128, 0.502);
@@ -22,5 +23,9 @@
     font-family: Montserrat;
     font-weight: bold;
     font-size: 2rem;
+  }
+
+  &--hidden {
+    bottom: -5.625rem;
   }
 }
