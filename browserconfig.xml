@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/confession-app/mstile-150x150.png?v=wAX4lb5AqG"/>
+            <TileColor>#a4b6a4</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

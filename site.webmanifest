@@ -1,0 +1,21 @@
+{
+    "name": "New Creation Realities",
+    "short_name": "New Creation Realities",
+    "icons": [
+        {
+            "src": "/confession-app/android-chrome-192x192.png?v=wAX4lb5AqG",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/confession-app/android-chrome-512x512.png?v=wAX4lb5AqG",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#a4b6a4",
+    "background_color": "#a4b6a4",
+    "start_url": "https://bkchu.github.io/confession-app/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

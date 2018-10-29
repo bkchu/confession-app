@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/confession-app/static/css/1.f9ccbdf4.chunk.css"
   },
   {
-    "revision": "4fc4a3cd58f92d102d140b1ff152bc4e",
+    "revision": "d8d0c579927b8849e941e6e6517af9a0",
     "url": "/confession-app/index.html"
   }
 ];
