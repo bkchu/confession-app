@@ -1,7 +1,7 @@
+@import '../../sass/variables';
 @import '../../sass/colors';
 @import '../../sass/mixins';
 
-// @include breakpoint(phablet) {
 .sidebar-background {
   background-color: #f2eeec9c;
   position: fixed;
@@ -15,7 +15,6 @@
     display: none;
   }
 }
-// }
 
 .sidebar {
   $self: &;
@@ -31,7 +30,7 @@
   transform: translateX(0);
 
   &__title-container {
-    height: 5.625rem;
+    height: $navbarHeight;
     background-color: $green;
     padding: 0 1.25rem;
     display: flex;
@@ -42,7 +41,7 @@
       font-family: 'Montserrat';
       font-weight: 700;
       font-size: 2.625rem;
-      letter-spacing: 1px;
+      letter-spacing: 0.375rem;
       margin-right: 1.25rem;
       color: $black;
       text-transform: uppercase;
@@ -84,7 +83,7 @@
   }
 
   &__footer {
-    height: 5.625rem;
+    height: $navbarHeight;
     background-color: $green;
     display: flex;
     justify-content: center;
@@ -95,5 +94,21 @@
 
   &--hidden {
     transform: translateX(100%);
+  }
+}
+@include breakpoint(phablet) {
+  .sidebar {
+    max-width: 70vw;
+  }
+}
+@include breakpoint(tablet) {
+  .sidebar {
+    max-width: 40vw;
+  }
+}
+
+@include breakpoint(laptop) {
+  .sidebar {
+    max-width: 30vw;
   }
 }

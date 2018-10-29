@@ -1,0 +1,8 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+
+.routes {
+  padding-top: $navbarHeight;
+  max-width: 740px;
+  margin: 0 auto;
+}

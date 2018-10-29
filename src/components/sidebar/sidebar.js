@@ -22,12 +22,7 @@ class Sidebar extends Component {
       this.sidebarDiv.current.scrollTop = 0;
     });
   }
-  // componentDidUpdate() {
-  //   requestAnimationFrame(() => {
-  //     window.scrollTo(0, 0);
-  //     this.sidebarDiv.current.scrollTop = 0;
-  //   });
-  // }
+
   page = obj => (
     <NavLink
       activeClassName={cx(

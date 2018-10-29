@@ -1,4 +1,5 @@
 @import '../../sass/colors';
+@import '../../sass/variables';
 
 .header {
   display: flex;
@@ -11,7 +12,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 5.625rem;
+  height: $navbarHeight;
 
   transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
@@ -21,6 +22,17 @@
 
   &--secondary {
     background-color: $peach;
+  }
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    height: calc(#{$navbarHeight} - 1.25rem);
+    margin-right: 1rem;
+    fill: $black;
   }
 
   &__brandname {
@@ -33,6 +45,6 @@
   }
 
   &--hidden {
-    top: -5.625rem;
+    top: -#{$navbarHeight};
   }
 }

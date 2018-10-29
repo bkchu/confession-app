@@ -1,8 +1,9 @@
+@import '../../sass/variables';
 @import '../../sass/colors';
 
 .landing {
   width: 100%;
-  height: calc(100vh - 5.625rem);
+  height: calc(100vh - #{$navbarHeight});
 
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import confession from '../../services/confession';
 import styles from './footer.module.scss';
@@ -73,13 +74,16 @@ class Footer extends Component {
           onClick={() => this.routeToNewPage('previous')}
           className={styles['footer__button']}
         >
-          {'<'}
+          {/* {'<'} */}
+
+          <FontAwesomeIcon icon="chevron-left" />
         </button>
         <button
           onClick={() => this.routeToNewPage('next')}
           className={styles['footer__button']}
         >
-          {'>'}
+          {/* {'>'} */}
+          <FontAwesomeIcon icon="chevron-right" />
         </button>
       </div>
     );

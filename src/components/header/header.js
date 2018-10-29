@@ -9,6 +9,7 @@ import {
   setIsScrollingDown
 } from '../../redux/reducer';
 import { ReactComponent as BurgerMenu } from '../../assets/svgs/burger-menu.svg';
+import { ReactComponent as ConfessionLogo } from '../../assets/svgs/logo_transparent.svg';
 
 import styles from './header.module.scss';
 
@@ -53,12 +54,13 @@ class Header extends Component {
 
     return (
       <nav className={headerClasses}>
-        <h1
+        <div
+          className={styles['header__left']}
           onClick={() => history.push('/')}
-          className={styles.header__brandname}
         >
-          CONFESS
-        </h1>
+          <ConfessionLogo className={styles['header__logo']} />
+          <h1 className={styles.header__brandname}>CONFESS</h1>
+        </div>
         <BurgerMenu
           style={{ cursor: 'pointer' }}
           onClick={() => openSideDrawer()}
