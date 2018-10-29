@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/confession-app/precache-manifest.29b58fd453ca884145a3ae4749e58b92.js"
+  "/confession-app/precache-manifest.668477f0874c90baf6dcde2c17a91095.js"
 );
 
 workbox.clientsClaim();
