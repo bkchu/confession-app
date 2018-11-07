@@ -1,7 +1,7 @@
 {
   "main.css": "/confession-app/static/css/main.d29d6295.chunk.css",
-  "main.js": "/confession-app/static/js/main.5e96e21b.chunk.js",
-  "main.js.map": "/confession-app/static/js/main.5e96e21b.chunk.js.map",
+  "main.js": "/confession-app/static/js/main.6517199b.chunk.js",
+  "main.js.map": "/confession-app/static/js/main.6517199b.chunk.js.map",
   "static/css/1.fd60ccbd.chunk.css": "/confession-app/static/css/1.fd60ccbd.chunk.css",
   "static/js/1.c34c929a.chunk.js": "/confession-app/static/js/1.c34c929a.chunk.js",
   "static/js/1.c34c929a.chunk.js.map": "/confession-app/static/js/1.c34c929a.chunk.js.map",
@@ -13,6 +13,6 @@
   "static/media/logo_transparent.ec8cc949.svg": "/confession-app/static/media/logo_transparent.ec8cc949.svg",
   "static/css/main.d29d6295.chunk.css.map": "/confession-app/static/css/main.d29d6295.chunk.css.map",
   "index.html": "/confession-app/index.html",
-  "precache-manifest.668477f0874c90baf6dcde2c17a91095.js": "/confession-app/precache-manifest.668477f0874c90baf6dcde2c17a91095.js",
+  "precache-manifest.11d6fc6d5f4b70efb81c1a91861e8fc3.js": "/confession-app/precache-manifest.11d6fc6d5f4b70efb81c1a91861e8fc3.js",
   "service-worker.js": "/confession-app/service-worker.js"
 }
