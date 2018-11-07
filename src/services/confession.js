@@ -328,7 +328,7 @@ export default {
           },
           {
             type: verse,
-            content: `“They are not of the world, even as I am not of the world. Sanctify them through thy truth: thy word is truth. As thou hast sent me into the world, even so have I also sent them into the world.” (John 17: 16-18)`
+            content: `“They are not of the world, even as I am not of the world. Sanctify them through thy truth: thy word is truth. As thou hast sent me into the world, even so have I also sent them into the world.” (John 17:16-18)`
           },
           {
             type: verse,
@@ -489,7 +489,7 @@ export default {
           },
           {
             type: paragraph,
-            content: `I have grace flowing out from my Spirit, so my life is full of your beauty, favor, charm and dignity. 
+            content: `charm and dignity. 
           Because of the grace, I am favored by my colleagues, friends and my superiors as well as my subordinates. This grace is the power of God to overcome any situation against me. The power of God is working in my spirit.
           I can do anything through Christ who strengthens me. God is my power. I am not using human abilities. I have supernatural power. I can do anything.
           The anointing is in my soul. The anointing is in my spirit.
@@ -509,7 +509,7 @@ export default {
           },
           {
             type: verse,
-            content: `“And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father.” (Galatian 4:6)`
+            content: `“And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father.” (Galatians 4:6)`
           },
           {
             type: verse,
