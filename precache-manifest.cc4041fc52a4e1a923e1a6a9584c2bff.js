@@ -16,15 +16,15 @@ self.__precacheManifest = [
     "url": "/confession-app/static/js/runtime~main.55139806.js"
   },
   {
-    "revision": "bde899e3b94feb852dfa",
-    "url": "/confession-app/static/js/main.bde899e3.chunk.js"
+    "revision": "608e77c6f519bdb055a6",
+    "url": "/confession-app/static/js/main.608e77c6.chunk.js"
   },
   {
     "revision": "c34c929a69ee7abe47f7",
     "url": "/confession-app/static/js/1.c34c929a.chunk.js"
   },
   {
-    "revision": "bde899e3b94feb852dfa",
+    "revision": "608e77c6f519bdb055a6",
     "url": "/confession-app/static/css/main.d29d6295.chunk.css"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/confession-app/static/css/1.fd60ccbd.chunk.css"
   },
   {
-    "revision": "91ee6506c91b295a9374f30bf5f83de4",
+    "revision": "54699b4e067b7485a340eafd3666d32b",
     "url": "/confession-app/index.html"
   }
 ];
