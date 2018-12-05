@@ -1,18 +1,18 @@
 {
   "main.css": "/confession-app/static/css/main.d29d6295.chunk.css",
-  "main.js": "/confession-app/static/js/main.6517199b.chunk.js",
-  "main.js.map": "/confession-app/static/js/main.6517199b.chunk.js.map",
+  "main.js": "/confession-app/static/js/main.bde899e3.chunk.js",
+  "main.js.map": "/confession-app/static/js/main.bde899e3.chunk.js.map",
   "static/css/1.fd60ccbd.chunk.css": "/confession-app/static/css/1.fd60ccbd.chunk.css",
   "static/js/1.c34c929a.chunk.js": "/confession-app/static/js/1.c34c929a.chunk.js",
   "static/js/1.c34c929a.chunk.js.map": "/confession-app/static/js/1.c34c929a.chunk.js.map",
   "runtime~main.js": "/confession-app/static/js/runtime~main.55139806.js",
   "runtime~main.js.map": "/confession-app/static/js/runtime~main.55139806.js.map",
-  "static/css/1.fd60ccbd.chunk.css.map": "/confession-app/static/css/1.fd60ccbd.chunk.css.map",
+  "static/css/main.d29d6295.chunk.css.map": "/confession-app/static/css/main.d29d6295.chunk.css.map",
   "static/media/burger-menu.4e93059e.svg": "/confession-app/static/media/burger-menu.4e93059e.svg",
   "static/media/burger-menu-collapse.222ace56.svg": "/confession-app/static/media/burger-menu-collapse.222ace56.svg",
   "static/media/logo_transparent.ec8cc949.svg": "/confession-app/static/media/logo_transparent.ec8cc949.svg",
-  "static/css/main.d29d6295.chunk.css.map": "/confession-app/static/css/main.d29d6295.chunk.css.map",
+  "static/css/1.fd60ccbd.chunk.css.map": "/confession-app/static/css/1.fd60ccbd.chunk.css.map",
   "index.html": "/confession-app/index.html",
-  "precache-manifest.11d6fc6d5f4b70efb81c1a91861e8fc3.js": "/confession-app/precache-manifest.11d6fc6d5f4b70efb81c1a91861e8fc3.js",
+  "precache-manifest.d9e8a31602bf4e1c846fc378e16b7fdb.js": "/confession-app/precache-manifest.d9e8a31602bf4e1c846fc378e16b7fdb.js",
   "service-worker.js": "/confession-app/service-worker.js"
 }
