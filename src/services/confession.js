@@ -1657,8 +1657,7 @@ export default {
           {
             type: paragraph,
             content: `Father God, as long as I yield to you, I believe you will work in the situations of my life.
-          Lord, you are the Lord of my life. Therefore I pray that you will guide me into the best 
-          path you have prepared for me today.`
+          Lord, you are the Lord of my life. Therefore I pray that you will guide me into the best path you have prepared for me today.`
           },
           {
             type: paragraph,
@@ -1703,8 +1702,7 @@ export default {
           },
           {
             type: paragraph,
-            content: `Thank you Lord. Thank you for every good thing you have granted me in my life. I 
-          receive it in the name of Jesus. I am also a giver today. I give blessings in the name of Jesus. People are blessed by me. I am the source of blessings in Christ.`
+            content: `Thank you Lord. Thank you for every good thing you have granted me in my life. I receive it in the name of Jesus. I am also a giver today. I give blessings in the name of Jesus. People are blessed by me. I am the source of blessings in Christ.`
           },
           {
             type: paragraph,
@@ -1721,8 +1719,7 @@ export default {
           {
             type: paragraph,
             content: `Lord I thank you for the Spirit of understanding and wisdom working in me. 
-          I study your Words today and understand them. When I study your Word, I will 
-          understand them. That Word will work in me and I will speak the Word through my mouth constantly. I will speak boldly today about the revelation I have received and the works of God.`
+          I study your Words today and understand them. When I study your Word, I will understand them. That Word will work in me and I will speak the Word through my mouth constantly. I will speak boldly today about the revelation I have received and the works of God.`
           },
           {
             type: paragraph,
@@ -1742,7 +1739,7 @@ export default {
           },
           {
             type: paragraph,
-            content: `Thank you, Father God. Wisdom is in the mouth of my wife(husband) and in her(his) heart. My wife(husband) is functioning in God today.`
+            content: `Thank you, Father God. Wisdom is in the mouth of my wife (husband) and in her (his) heart. My wife (husband) is functioning in God today.`
           },
           {
             type: subtitle,
