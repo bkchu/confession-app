@@ -489,7 +489,7 @@ export default {
           },
           {
             type: paragraph,
-            content: `charm and dignity. 
+            content: `I have grace flowing out from my Spirit, so my life is full of your beauty, favor, charm, and dignity. 
           Because of the grace, I am favored by my colleagues, friends and my superiors as well as my subordinates. This grace is the power of God to overcome any situation against me. The power of God is working in my spirit.
           I can do anything through Christ who strengthens me. God is my power. I am not using human abilities. I have supernatural power. I can do anything.
           The anointing is in my soul. The anointing is in my spirit.
