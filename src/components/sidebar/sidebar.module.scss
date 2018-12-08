@@ -21,7 +21,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   overflow: scroll;
   background-color: $white;
@@ -62,7 +62,7 @@
       padding: 1rem 1.25rem;
       text-align: right;
       font-family: Vollkorn;
-      font-size: 2.25rem;
+      font-size: 2rem;
       line-height: 1.17;
       color: $black;
       width: 100%;
@@ -93,12 +93,12 @@
   }
 
   &--hidden {
-    transform: translateX(100%);
+    transform: translateX(102%);
   }
 }
 @include breakpoint(phablet) {
   .sidebar {
-    max-width: 70vw;
+    max-width: 100vw;
   }
 }
 @include breakpoint(tablet) {

@@ -25,7 +25,7 @@ export default {
       part: 0,
       content: `How To Use These Confessions Effectively`
     },
-    { type: section_header, content: `Part 1` },
+    { type: section_header, content: `Part 1 - The New Creation Confession` },
     {
       type: page,
       page: 2,
@@ -75,7 +75,7 @@ export default {
       part: 1,
       content: `Confession For Functioning In The Spirit`
     },
-    { type: section_header, content: `Part 2 - Prayer By Theme` },
+    { type: section_header, content: `Part 2 - Confession by Themes` },
     {
       type: page,
       page: 10,
@@ -179,7 +179,7 @@ export default {
           },
           {
             type: paragraph,
-            content: `Praying in tongues, meditating on the word(confession), the attitude of putting God’s Word as your highest priority, and training to immediately obey the voice of our born again spirit is the shortcut that allow us to develop our born again spirit and reign in every situation.`
+            content: `Praying in tongues, meditating on the word (confession), the attitude of putting God’s Word as your highest priority, and training to immediately obey the voice of our born again spirit is the shortcut that allow us to develop our born again spirit and reign in every situation.`
           },
           {
             type: paragraph,

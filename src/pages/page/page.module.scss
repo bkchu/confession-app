@@ -4,6 +4,8 @@
   $self: &;
   padding: 1.25rem 1.25rem 45vh;
   background-color: $white;
+  max-width: 480px;
+  margin: 0 auto;
   &__title {
     font-family: Vollkorn;
     font-size: 3rem;
