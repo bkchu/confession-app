@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/confession-app/static/js/runtime~main.55139806.js"
   },
   {
-    "revision": "608e77c6f519bdb055a6",
-    "url": "/confession-app/static/js/main.608e77c6.chunk.js"
+    "revision": "f18c5c4dfa3f8a9d88fe",
+    "url": "/confession-app/static/js/main.f18c5c4d.chunk.js"
   },
   {
-    "revision": "c34c929a69ee7abe47f7",
-    "url": "/confession-app/static/js/1.c34c929a.chunk.js"
+    "revision": "addc587edda63e97309a",
+    "url": "/confession-app/static/js/1.addc587e.chunk.js"
   },
   {
-    "revision": "608e77c6f519bdb055a6",
-    "url": "/confession-app/static/css/main.d29d6295.chunk.css"
+    "revision": "f18c5c4dfa3f8a9d88fe",
+    "url": "/confession-app/static/css/main.ed9ac70e.chunk.css"
   },
   {
-    "revision": "c34c929a69ee7abe47f7",
-    "url": "/confession-app/static/css/1.fd60ccbd.chunk.css"
+    "revision": "addc587edda63e97309a",
+    "url": "/confession-app/static/css/1.913333f4.chunk.css"
   },
   {
-    "revision": "54699b4e067b7485a340eafd3666d32b",
+    "revision": "daa41f33169948e3dbb18ed907c9dc1f",
     "url": "/confession-app/index.html"
   }
 ];
