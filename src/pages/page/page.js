@@ -8,7 +8,6 @@ import { BibleVerseFromText } from '../../services/verse-parser';
 import styles from './page.module.scss';
 import Footer from '../../components/footer/footer';
 import Error from '../error/error';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Page extends Component {
   constructor() {
