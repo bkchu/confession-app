@@ -52,4 +52,25 @@
     font-style: italic;
     margin-top: 1.25rem;
   }
+
+  &__footer {
+    text-align: center;
+
+    button {
+      margin-top: 4rem;
+      border: solid 2px $black;
+      width: 20.625rem;
+      height: 7.625rem;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 1.7px;
+      text-align: center;
+      color: #353535;
+      text-transform: uppercase;
+      background: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }

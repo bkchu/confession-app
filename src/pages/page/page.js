@@ -8,23 +8,27 @@ import { BibleVerseFromText } from '../../services/verse-parser';
 import styles from './page.module.scss';
 import Footer from '../../components/footer/footer';
 import Error from '../error/error';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Page extends Component {
   constructor() {
     super();
     this.pageDiv = React.createRef();
   }
+
   componentDidMount() {
     window.addEventListener('scroll', this.onScroll, { passive: true });
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
   }
+
   componentDidUpdate() {
     requestAnimationFrame(() => {
       window.scrollTo(0, 0);
     });
   }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll);
   }
@@ -34,16 +38,19 @@ class Page extends Component {
       {str}
     </h1>
   );
+
   paragraph = (str, key) => (
     <p key={key} className={styles['page__paragraph']}>
       {str}
     </p>
   );
+
   verse = (str, key) => (
     <p key={key} className={styles['page__verse']}>
       {str}
     </p>
   );
+
   subtitle = (str, key) => (
     <h2 key={key} className={styles['page__subtitle']}>
       {str}
@@ -59,6 +66,10 @@ class Page extends Component {
   onScroll = e => {
     this.props.setScrollStatus(true);
   };
+
+  scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
 
   render() {
     const displayPage = page => {
@@ -97,6 +108,11 @@ class Page extends Component {
       <div ref={this.pageDiv} className={styles.page}>
         {displayPage(confession.getPage(part, page))}
         {!isOpen && <Footer />}
+        <div className={styles['page__footer']}>
+          <button onClick={() => this.scrollToTop()} className={styles['page__footer-btn']}>
+            Back to Top
+          </button>
+        </div>
       </div>
     );
   }
