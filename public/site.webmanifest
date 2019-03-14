@@ -15,7 +15,7 @@
     ],
     "theme_color": "#a4b6a4",
     "background_color": "#a4b6a4",
-    "start_url": "https://confession-app.netlify.com/",
+    "start_url": "https://confession.netlify.com/",
     "display": "standalone",
     "orientation": "portrait"
 }
