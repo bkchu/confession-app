@@ -1066,7 +1066,7 @@ export default {
           },
           {
             type: verse,
-            content: `I can do all things through Christ which strengtheneth me. (Phil 4:13)`
+            content: `I can do all things through Christ which strengtheneth me. (Philippians 4:13)`
           },
           {
             type: verse,
