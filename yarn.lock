@@ -7099,10 +7099,10 @@ minipass@^2.2.1, minipass@^2.3.5:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
-minireset.css@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/minireset.css/-/minireset.css-0.0.3.tgz#0b112dbbd7809ea0fc965388b79fd29390778fe5"
-  integrity sha1-CxEtu9eAnqD8llOIt5/Sk5B3j+U=
+minireset.css@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/minireset.css/-/minireset.css-0.0.5.tgz#90ac7315fe2513855fd9e30af524e00a1ee76a16"
+  integrity sha512-q3Z1aXZaZyrXeHqg8+LeKvrmCVC3D295RLhYeLNFP9MUKndNAmQXRJXAbu4JhhDdErZPTLDxDt4kTVpWBRaB6A==
 
 minizlib@^1.2.1:
   version "1.2.1"
