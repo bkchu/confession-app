@@ -13,7 +13,7 @@
     "minireset.css": "0.0.5",
     "node-sass": "^4.9.4",
     "npm": "^6.10.2",
-    "react": "^16.8.6",
+    "react": "^16.13.0",
     "react-dom": "^16.5.2",
     "react-html-parser": "^2.0.2",
     "react-redux": "^5.0.7",
