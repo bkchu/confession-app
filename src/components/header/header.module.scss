@@ -1,5 +1,5 @@
-@import '../../sass/colors';
-@import '../../sass/variables';
+@import "../../sass/colors";
+@import "../../sass/variables";
 
 .header {
   display: flex;
@@ -13,6 +13,7 @@
   left: 0;
   width: 100vw;
   height: $navbarHeight;
+  z-index: 20;
 
   transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
@@ -36,7 +37,7 @@
   }
 
   &__brandname {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: bold;
     font-size: 2.625rem;
     letter-spacing: 0.375rem;
@@ -46,5 +47,49 @@
 
   &--hidden {
     top: -#{$navbarHeight};
+  }
+
+  &__version-selector-btn {
+    margin-left: 1rem;
+    border: solid 2px $black;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color: #353535;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__version-selector {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-125%);
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    z-index: 10;
+
+    &--shown {
+      transform: translateY(#{$navbarHeight});
+    }
+  }
+
+  &__version {
+    border: none;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    font-family: Vollkorn;
+    font-size: 2rem;
+    line-height: 1.17;
+    color: $black;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
   }
 }

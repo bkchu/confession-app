@@ -1,7 +1,21 @@
-import ReactHtmlParser from 'react-html-parser';
-import books from './bible-abbreviations';
+import ReactHtmlParser from "react-html-parser";
+import books from "./bible-abbreviations";
 
-export const BibleVerseFromText = str => {
+export const VERSIONS = {
+  AMPC: 8,
+  ESV: 59,
+  KJV: 1,
+  NKJV: 114,
+  TPT: 1849,
+};
+
+/**
+ *
+ * @param {string} str
+ * @param {'NKJV' | 'KJV' | 'ESV'} version
+ * @returns
+ */
+export const BibleVerseFromText = (str, version = "NKJV") => {
   const contents = str.slice();
 
   const regex = /(?:(\d)\s{1})?(\w+)\s{1}(\d+):(\d+)(?:-?(\d+))?/gi;
@@ -23,9 +37,13 @@ export const BibleVerseFromText = str => {
       const book = bookAbbreviation && bookAbbreviation.toUpperCase(), // books['1 Corinthians'] => '1CO'
         chapter = p3,
         startingVerse = p4,
-        endingVerse = p5 ? `-${p5}` : '',
-        // template verse - https://www.bible.com/bible/1/2CO.13.4-5.KJV
-        link = `https://www.bible.com/bible/1/${book}.${chapter}.${startingVerse}${endingVerse}.KJV`,
+        endingVerse = p5 ? `-${p5}` : "",
+        // KJV - template verse - https://www.bible.com/bible/1/2CO.13.4-5.KJV
+        // NKJV - template verse - https://www.bible.com/bible/114/2CO.13.4-5.NKJV
+        // ESV - template verse - https://www.bible.com/bible/59/2CO.13.4-5.ESV
+        link = `https://www.bible.com/bible/${
+          VERSIONS[version]
+        }/${book}.${chapter}.${startingVerse}${endingVerse}.${version}`,
         aTag = `<a style="text-decoration: none; color: #777777;" href="${link}" target="_blank" rel="noopener noreferrer">${match}</a>`;
       return aTag;
     } else {

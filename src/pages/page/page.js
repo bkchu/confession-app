@@ -71,6 +71,9 @@ class Page extends Component {
   }
 
   render() {
+    const { page, part } = this.props.match.params;
+    const { isOpen, version } = this.props;
+
     const displayPage = page => {
       return page ? (
         page.map(({ type, content }, index) => {
@@ -80,10 +83,10 @@ class Page extends Component {
               return this.title(content, key);
 
             case 'PARAGRAPH':
-              return this.paragraph(BibleVerseFromText(content), key);
+              return this.paragraph(BibleVerseFromText(content, version), key);
 
             case 'VERSE':
-              return this.verse(BibleVerseFromText(content), key);
+              return this.verse(BibleVerseFromText(content, version), key);
 
             case 'SUBTITLE':
               return this.subtitle(content, key);
@@ -100,8 +103,7 @@ class Page extends Component {
       );
     };
 
-    const { page, part } = this.props.match.params;
-    const { isOpen } = this.props;
+    
 
     return (
       <div ref={this.pageDiv} className={styles.page}>
@@ -119,7 +121,8 @@ class Page extends Component {
 
 const mapStateToProps = state => {
   return {
-    isOpen: state.showSideDrawer
+    isOpen: state.showSideDrawer,
+    version: state.version
   };
 };
 

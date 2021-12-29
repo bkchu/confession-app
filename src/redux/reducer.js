@@ -2,13 +2,15 @@ import {
   OPEN_SIDE_DRAWER,
   CLOSE_SIDE_DRAWER,
   SET_SCROLL_STATUS,
-  SET_IS_SCROLLING_DOWN
-} from './actions';
+  SET_IS_SCROLLING_DOWN,
+  SET_VERSION,
+} from "./actions";
 
 const initialState = {
   showSideDrawer: false,
   didScroll: false,
-  isScrollingDown: false
+  isScrollingDown: false,
+  version: "NKJV",
 };
 export default function reducer(state = initialState, action) {
   switch (action.type) {
@@ -23,32 +25,44 @@ export default function reducer(state = initialState, action) {
 
     case SET_IS_SCROLLING_DOWN:
       return { ...state, isScrollingDown: action.payload };
+
+    case SET_VERSION:
+      return {
+        ...state,
+        version: action.payload,
+      };
     default:
       return state;
   }
 }
 
 export const openSideDrawer = () => {
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
   return {
-    type: OPEN_SIDE_DRAWER
+    type: OPEN_SIDE_DRAWER,
   };
 };
 export const closeSideDrawer = () => {
-  document.body.style.overflow = 'auto';
+  document.body.style.overflow = "auto";
   return {
-    type: CLOSE_SIDE_DRAWER
+    type: CLOSE_SIDE_DRAWER,
   };
 };
-export const setScrollStatus = didScroll => {
+export const setScrollStatus = (didScroll) => {
   return {
     type: SET_SCROLL_STATUS,
-    payload: didScroll
+    payload: didScroll,
   };
 };
-export const setIsScrollingDown = isScrollingDown => {
+export const setIsScrollingDown = (isScrollingDown) => {
   return {
     type: SET_IS_SCROLLING_DOWN,
-    payload: isScrollingDown
+    payload: isScrollingDown,
+  };
+};
+export const setVersion = (version) => {
+  return {
+    type: SET_VERSION,
+    payload: version,
   };
 };
